@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/"><img src="Asphalt_9_legend.png" alt="Website Logo" ></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products/">Products</a></li>
+                <li><a href="/news/">News</a></li>
+                <li><a href="/esports/">Esports</a></li>
+                <li><a href="/subscription/subscription.html">Subscription</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="subscription-form">
+            <h2>Content Creator/Viewer Form</h2>
+            <form id="subscribe-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <span class="error-message" id="dob-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message" id="gender-error"></span>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="agree" name="agree" required>
+                        I agree to the terms and conditions
+                    </label>
+                    <span class="error-message" id="agree-error"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://gmlft.co/A9_FB_Website"><img src="../facebook.png" alt="Facebook"></a>
+            <a href="https://gmlft.co/A9_TW_Website"><img src="../twitter.png" alt="Twitter"></a>
+            <a href="https://gmlft.co/A9_IG_Website"><img src="../instagram.png" alt="Instagram"></a>
+            <a href="https://gmlft.co/A9_YT_Website"><img src="../youtube.png" alt="Youtube"></a>
+            <a href="https://gmlft.co/A9-TT-Website"><img src="../tiktok.png" alt="Tiktok"></a>
+        </div>
+    </footer>    
+    <script src="../script.js"></script>
+    <script src="subscription.js"></script>
+</body>
+</html>
